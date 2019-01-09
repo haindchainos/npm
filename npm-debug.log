@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '@cityofzion/neo-js' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @cityofzion/neo-js
+8 silly fetchNamedPackageData @cityofzion/neo-js
+9 silly mapToRegistry name @cityofzion/neo-js
+10 silly mapToRegistry scope (from package name) @cityofzion
+11 verbose mapToRegistry no registry URL found in name for scope @cityofzion
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/@cityofzion%2fneo-js
+15 verbose request uri https://registry.npmjs.org/@cityofzion%2fneo-js
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 5:33:09 PM
+18 verbose request id 063e96a6d017da32
+19 verbose etag W/"2c64669f8928db3916af2b420f1cf387"
+20 verbose lastModified Sat, 29 Dec 2018 15:25:04 GMT
+21 http request GET https://registry.npmjs.org/@cityofzion%2fneo-js
+22 http 304 https://registry.npmjs.org/@cityofzion%2fneo-js
+23 verbose headers { date: 'Wed, 09 Jan 2019 10:33:11 GMT',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie':
+23 verbose headers    [ '__cfduid=df43c0e1520c71a6d406ba7a234a069d21547029990; expires=Thu, 09-Jan-20 10:33:10 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 verbose headers   'cf-cache-status': 'REVALIDATED',
+23 verbose headers   'cache-control': 'public, max-age=300',
+23 verbose headers   'cf-ray': '49663e7ec8ff8520-HKG',
+23 verbose headers   etag: '"2c64669f8928db3916af2b420f1cf387"',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'last-modified': 'Sat, 29 Dec 2018 15:25:04 GMT',
+23 verbose headers   vary: 'Accept-Encoding',
+23 verbose headers   'x-amz-meta-rev': '16-af8c07232020b64a1ce7a870dfce233f',
+23 verbose headers   server: 'cloudflare' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Wed, 09 Jan 2019 10:33:11 GMT',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie':
+24 silly get      [ '__cfduid=df43c0e1520c71a6d406ba7a234a069d21547029990; expires=Thu, 09-Jan-20 10:33:10 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+24 silly get     'cf-cache-status': 'REVALIDATED',
+24 silly get     'cache-control': 'public, max-age=300',
+24 silly get     'cf-ray': '49663e7ec8ff8520-HKG',
+24 silly get     etag: '"2c64669f8928db3916af2b420f1cf387"',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     'last-modified': 'Sat, 29 Dec 2018 15:25:04 GMT',
+24 silly get     vary: 'Accept-Encoding',
+24 silly get     'x-amz-meta-rev': '16-af8c07232020b64a1ce7a870dfce233f',
+24 silly get     server: 'cloudflare' } ]
+25 verbose etag https://registry.npmjs.org/@cityofzion%2fneo-js from cache
+26 verbose get saving @cityofzion/neo-js to /home/haind/.npm/registry.npmjs.org/_40cityofzion_252fneo-js/.cache.json
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Starting
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 verbose stack Error: Refusing to install @cityofzion/neo-js as a dependency of itself
+44 verbose stack     at checkSelf (/usr/share/npm/lib/install/validate-args.js:40:14)
+44 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+44 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+44 verbose stack     at chain (/usr/share/npm/node_modules/slide/lib/chain.js:20:5)
+44 verbose stack     at /usr/share/npm/lib/install/validate-args.js:15:5
+44 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+44 verbose stack     at Array.forEach (<anonymous>)
+44 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+44 verbose stack     at Array.forEach (<anonymous>)
+44 verbose stack     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+45 verbose cwd /home/haind/Downloads/neo-js-develop
+46 error Linux 4.15.0-43-generic
+47 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save" "@cityofzion/neo-js"
+48 error node v8.10.0
+49 error npm  v3.5.2
+50 error code ENOSELF
+51 error Refusing to install @cityofzion/neo-js as a dependency of itself
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
